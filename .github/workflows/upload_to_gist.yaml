@@ -1,0 +1,11 @@
+name: upload-to-gist
+on: [push]
+jobs:
+  upload:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: sergeysova/gist-write-action@v1
+        with:
+          gist_id: b2cd66204f2aafd6bac5378598d9f62e
+          file_name: example.txt
+          content: "100"
