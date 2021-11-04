@@ -13,4 +13,4 @@ jobs:
           auth: ${{ secrets.GIST_TOKEN }}
           gist_url: https://gist.github.com/zmiklank/b2cd66204f2aafd6bac5378598d9f62e
           gist_title: test_gist
-          github_file: test_file
+          github_file: http://artifacts.dev.testing-farm.io/005b10cf-3987-4d25-af97-9a4b42c3cc24/
