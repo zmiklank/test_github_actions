@@ -1,4 +1,4 @@
-me: Get PR Number
+name: Get PR Number
 
 on: [pull_request]
 
