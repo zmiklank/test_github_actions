@@ -10,7 +10,7 @@ jobs:
     steps:
       - run: |
           echo "N"
-          echo ${{ github.event.number }}
+          echo ${{ github.event.issue.number }}
       - run: |
           echo "PR N"
           echo ${{ github.event.issue_comment.issue.number }}
@@ -21,4 +21,4 @@ jobs:
       - name: Checkout repo 2
         uses: actions/checkout@v2
         with:
-          ref: "refs/pull/${{ github.event.number }}/head"
+          ref: "refs/pull/${{ github.event.issue.number }}/head"
