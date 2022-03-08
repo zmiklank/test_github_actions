@@ -12,3 +12,11 @@ jobs:
       - run: |
           echo "PR N"
           echo ${{ github.event.pull_request.number }}
+      - name: Checkout repo
+        uses: actions/checkout@v2
+        with:
+          ref: "refs/pull/${{ github.event.pull_request.number }}/head"
+      - name: Checkout repo 2
+        uses: actions/checkout@v2
+        with:
+          ref: "refs/pull/${{ github.event.number }}/head"
