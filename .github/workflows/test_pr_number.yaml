@@ -1,9 +1,11 @@
-name: Get PR Number
+name: Container-tests by GitHub Action at Testing Farm
 
-on: [pull_request]
-
+on:
+  issue_comment:
+    types:
+      - created
 jobs:
-  pull-request:
+  build:
     runs-on: ubuntu-latest
     steps:
       - run: |
