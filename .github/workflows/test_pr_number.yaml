@@ -17,8 +17,8 @@ jobs:
       - name: Checkout repo
         uses: actions/checkout@v2
         with:
-          ref: "refs/pull/${{ github.event.issue_comment.issue.number }}/head"
+          ref: "refs/pull/${{ github.event.comment.id }}/head"
       - name: Checkout repo 2
         uses: actions/checkout@v2
         with:
-          ref: "refs/pull/${{ github.event.issue.number }}/head"
+          ref: "refs/pull/${{ github.event.comment.node_id }}/head"
