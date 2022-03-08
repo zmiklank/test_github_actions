@@ -9,10 +9,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - run: |
-          echo "N"
+          echo "github_event_issue_number"
           echo ${{ github.event.issue.number }}
       - run: |
-          echo "PR N"
+          echo "issue_comment_issue_number"
           echo ${{ github.event.issue_comment.issue.number }}
       - name: Checkout repo
         uses: actions/checkout@v2
