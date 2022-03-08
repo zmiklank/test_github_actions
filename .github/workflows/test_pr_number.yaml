@@ -1,0 +1,14 @@
+me: Get PR Number
+
+on: [pull_request]
+
+jobs:
+  pull-request:
+    runs-on: ubuntu-latest
+    steps:
+      - run: |
+          echo "N"
+          echo ${{ github.event.number }}
+      - run: |
+          echo "PR N"
+          echo ${{ github.event.pull_request.number }}
