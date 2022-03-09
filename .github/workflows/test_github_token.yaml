@@ -1,7 +1,7 @@
 name: Container-tests by GitHub Action at Testing Farm
 
 on:
-  push
+  [push]
 
 jobs:
   build:
