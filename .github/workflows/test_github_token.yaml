@@ -1,0 +1,10 @@
+name: Container-tests by GitHub Action at Testing Farm
+
+on:
+  push
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: zmiklank/test_github_actions@main
