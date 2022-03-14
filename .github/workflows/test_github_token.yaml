@@ -7,4 +7,7 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
+      - uses: actions/checkout@v2
+        with:
+          ref: main
       - uses: zmiklank/test_github_actions@main
