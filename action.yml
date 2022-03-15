@@ -1,0 +1,17 @@
+name: 'Hello World'
+description: 'Test, if github.token can be used in composite'
+
+inputs:
+  github_token:
+    required: false
+    default: ${{ github.token }}
+
+runs:
+  using: "composite"
+  steps:
+    - name: use github.token directly
+      run: echo GitHub token ${{ github.token }}.
+      shell: bash
+    - name: use input
+      run: echo GitHub token ${{ github.token }}.
+      shell: bash

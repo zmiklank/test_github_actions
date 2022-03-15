@@ -1,6 +1,0 @@
-name: 'Hello World'
-description: 'Test, if github.token can be used in composite'
-runs:
-  using: "composite"
-  steps:
-    - run: echo GitHub token: ${{ github.token }}.
